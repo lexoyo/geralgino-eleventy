@@ -38,8 +38,8 @@ layout: 'base.njk'
 
     <div class="row">
 
-      {%- for post in collections.post -%}
-      {% include 'service.njk' %}
+      {%- for post in directus.post -%}
+        <h2>{{ post.title }}</h2>
       {%- endfor -%}
 
     </div>
